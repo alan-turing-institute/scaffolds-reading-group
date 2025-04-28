@@ -1,5 +1,8 @@
 # Scaffolds Reading Group
 
+## Reading List
+[link to list](https://docs.google.com/document/d/1HPfYtBJkwuexZnb3_XWWrlCL8dlMHvBBjONkNc8MSNk/edit?usp=sharing)
+
 ## dPASP
 
 Geh, R.L., Gonçalves, J., Silveira, I.C., Mauá, D.D. and Cozman,
@@ -8,7 +11,7 @@ set programming environment for neurosymbolic learning and
 reasoning. [arXiv preprint
 arXiv:2308.02944](https://arxiv.org/abs/2308.02944).
 
-## Installing dPASP
+### Installing dPASP
 
 The GitHub repo is at https://github.com/kamel-usp/dpasp .
 
