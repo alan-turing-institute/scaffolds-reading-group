@@ -20,8 +20,10 @@ https://github.com/kamel-usp/dpasp/issues/11 However the page is
 available via the Internet Archive at:
 https://web.archive.org/web/20240620194257/http:/kamel.ime.usp.br/pages/learn_dpasp
 
-It seems that the software only works on Linux (not Mac). Here are the
-steps I (@RobBlackwell) took to run it on an Azure Linux VM:
+It seems that the software only works on Linux (not Mac) on x86
+processors. Here are the steps I
+[@RobBlackwell](https://github.com/RobBlackwell) ) took to run it on
+an Azure Linux VM:
 
 ``` sh
 
@@ -36,3 +38,37 @@ pip install --upgrade setuptools pip
 pip install pasp-plp
 
 ```
+
+### dPASP via Docker on Apple Silicon
+
+In the docker subdirectory, there is a `Dockerfile` that provides a
+working dPASP environment via Docker, even on Apple Silicon
+machines. I assume you have a working Docker (See [Get
+Docker](https://docs.docker.com/get-started/get-docker/)), and `Make`
+(probably via homebrew).
+
+To build the Docker image (this may take some minutes!):
+
+``` sh
+make build
+```
+
+To run the Docker image:
+
+``` sh
+make run
+```
+
+The latter drops you into a shell prompt. You can test `pasp` by typing:
+
+``` sh
+pasp --help
+```
+
+``` sh
+cd /app
+pasp smokers.plp
+```
+
+I ([@RobBlackwell](https://github.com/RobBlackwell)) have tested this
+on Apple Silicon. It might work on Windows too?
